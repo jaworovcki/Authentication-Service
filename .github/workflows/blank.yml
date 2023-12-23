@@ -41,6 +41,7 @@ jobs:
 
     - name: Build
       run: dotnet build --configuration Release
+      working-directory: ./src/AuthenticationService/AuthenticationService.sln
 
     - name: Test
       run: dotnet test --configuration Release --no-restore
